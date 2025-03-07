@@ -1,0 +1,138 @@
+.rating__content {
+  max-height: 416px;
+  max-width: 412px;
+  padding: 32px;
+  border-radius: 30px;
+  background: linear-gradient(#232a34, #181e27);
+}
+
+.rating__star {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(#232a34, #181e27);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 16px;
+  height: 16px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 7px;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #969fad;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.rating__numbers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating__numbers-each {
+  width: 51px;
+  height: 51px;
+  background: linear-gradient(#232a34, #181e27);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  cursor: pointer;
+  border: none;
+  color: #969fad;
+  font-family: "Overpass";
+  transition: all 0.1s linear;
+}
+
+.rating__numbers-each:hover {
+  color: #ffffff;
+  background: #7c8798;
+  transform: scale(1.1);
+}
+
+.rating__numbers-orange {
+  width: 51px;
+  height: 51px;
+  background-color: #fc7614;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  cursor: pointer;
+  border: none;
+  font-family: "Overpass";
+  transition: all 0.1s linear;
+}
+
+.rating__numbers-orange:hover {
+  transform: scale(1.1);
+}
+
+.rating__button {
+  border: none;
+  width: 100%;
+  background-color: #fc7614;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: "Overpass";
+  padding-top: 11px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  border-radius: 22px;
+  margin-top: 32px;
+  cursor: pointer;
+}
+
+.rating__button:hover {
+  background-color: white;
+  color: #fc7614;
+}
+
+@media screen and (max-width: 375px) {
+  .rating__content {
+    max-height: 360px;
+    max-width: 327px;
+    padding: 24px;
+  }
+
+  .rating__star {
+    width: 40px;
+    height: 40px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 14px;
+    max-width: 279px;
+  }
+
+  .rating__numbers-each .rating__numbers-orange {
+    width: 42px;
+    height: 42px;
+  }
+
+  .rating__button {
+    font-size: 14px;
+    margin-top: 24px;
+  }
+}
