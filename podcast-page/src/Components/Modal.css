@@ -1,0 +1,170 @@
+.modal {
+  position: absolute;
+  left: 130px;
+  bottom: 130px;
+  max-width: 723px;
+  max-height: 509px;
+  background-color: #121725;
+  padding-top: 88px;
+  padding-right: 58px;
+}
+
+.modal__title {
+  font-size: 52px;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+
+.modal__title-green {
+  color: #54e6af;
+}
+
+.modal__text {
+  max-width: 445px;
+  color: #c2cbe5;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.modal__email {
+  display: flex;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.modal__input {
+  font-size: 14px;
+  font-family: "Chivo";
+  font-weight: 700;
+  line-height: 28px;
+  width: 363px;
+  border: none;
+  background-color: #2c344b;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 28px;
+}
+
+.modal__input:focus {
+  outline: 2px solid #54e6af;
+}
+
+.modal__button {
+  position: absolute;
+  font-size: 14px;
+  font-family: "Chivo";
+  font-weight: 700;
+  line-height: 28px;
+  background-color: #54e6af;
+  color: black;
+  padding: 9px 27px;
+  border-radius: 28px;
+  border: none;
+  left: 258px;
+  cursor: pointer;
+}
+
+.modal__button:hover {
+  background-color: #b3ffe2;
+}
+
+.modal__error {
+  position: absolute;
+  color: #fb3e3e;
+  font-weight: 700;
+  padding-left: 32px;
+  margin-top: 78px;
+  margin-bottom: 0;
+}
+
+.modal__icon {
+  padding-right: 40px;
+  color: #c2cbe5;
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    position: absolute;
+    left: 39px;
+    bottom: 257px;
+    max-width: 635px;
+    padding-top: 93px;
+    padding-right: 0;
+  }
+
+  .modal__title {
+    font-size: 48px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .modal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    left: 0;
+    max-width: 327px;
+    padding: 175px 24px 94px 24px;
+    bottom: 0;
+    background-color: rgba(18, 23, 37, 0.9);
+    top: 0;
+  }
+
+  .modal__title {
+    font-size: 26px;
+  }
+
+  .modal__text {
+    font-size: 15px;
+    margin-bottom: 98px;
+  }
+
+  .modal__email {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .modal__input {
+    width: 263px;
+    z-index: 2;
+    padding: 9px 32px;
+  }
+
+  .modal__button {
+    position: relative;
+    left: 0;
+    padding: 9px 109px;
+  }
+
+  .modal__error {
+    position: relative;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .modal__icons {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: 240px;
+    max-width: 327px;
+  }
+
+  .modal__icon {
+    padding: 0;
+    max-height: 17px;
+    max-width: 77px;
+    padding-right: 23px;
+  }
+
+  .modal__icon:last-child {
+    padding-right: 0;
+  }
+}

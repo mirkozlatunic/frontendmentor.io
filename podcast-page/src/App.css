@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+}
+
+.app {
+  background-color: #121725;
+  background-image: url("./assets/desktop/image-host.jpg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Chivo";
+  color: white;
+}
+
+.app__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__logo {
+  width: 135px;
+  height: 56px;
+  margin-top: 102px;
+  margin-left: 165px;
+}
+
+.app__dots {
+  width: 232px;
+  height: 103px;
+  position: absolute;
+  right: 0;
+  bottom: 78px;
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    background-image: url("./assets/tablet/image-host.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  .app__logo {
+    margin-top: 50px;
+    margin-left: 39px;
+  }
+
+  .app__background {
+    padding: 0;
+  }
+
+  .app__dots {
+    width: 232px;
+    height: 103px;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .app {
+    background-image: url("./assets/mobile/image-host.jpg");
+    background-position: center;
+  }
+
+  .app__content {
+    justify-content: center;
+  }
+
+  .app__logo {
+    z-index: 2;
+    margin-top: 62px;
+    margin-left: 0;
+  }
+
+  .app__dots {
+    visibility: hidden;
+  }
+}
