@@ -1,11 +1,10 @@
 <div align="center">
-<h1>Frontend Mentor - Interactive rating component</h1>
+<h1>Frontend Mentor - Recipe page solution</h1>
 
 <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="html">
 <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="css">
-<img src ="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="reactjs">
 
-<img src="./public/desktop-preview.jpg">
+<img src="./design/desktop-design.jpg">
 </div>
 
 ## 📋 <a name="table">Table of Contents</a>
@@ -17,21 +16,20 @@
 
 ## <a name="introduction">🤖 Introduction</a>
 
-The challenge was to create a Interactive rating component with hover effects that looks as close tho the concept design at the Figma page.
+The challenge was to create a blog preview card with hover effects that looks as close tho the concept design at the Figma page.
 
-In this project I have created the porject via ReactJS to implement the new learnings.
+The freedom is to use the tool which that would help the best to complete the challenge.
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
 - HTML
 - CSS
-- ReactJS
 
 ## <a name="link-page">🔋 Link to Page</a>
 
-- Live Site URL: [GitHub Page](https://mirkozlatunic.github.io/rating-component/)
+- Live Site URL: [GitHub Page](https://mirkozlatunic.github.io/blog-preview-card/)
 
 ## <a name="improvements">🛠️ Improvements Ideas</a>
 
-- Adding hover effect to the submit button
-- Adding click effect when Thank you Modal is opening
+- Make the buttons linkable to frontendmentor.io
+- Change the hover effect when hover away from the button
