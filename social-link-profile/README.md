@@ -27,7 +27,7 @@ The freedom is to use the tool which that would help the best to complete the ch
 
 ## <a name="link-page">🔋 Link to Page</a>
 
-- Live Site URL: [GitHub Page](https://mirkozlatunic.github.io/social-link-profile/)
+- Live Site URL: [Netlify Page](https://sensational-gecko-d76a8c.netlify.app/)
 
 ## <a name="improvements">🛠️ Improvements Ideas</a>
 
