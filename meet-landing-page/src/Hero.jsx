@@ -3,17 +3,15 @@ import imgCircles from "./assets/tablet/image-hero.png";
 
 function Hero() {
   return (
-    <div className="align-center flex w-full flex-col items-center p-8 pt-16 text-center">
+    <div className="flex w-full flex-col items-center p-8 pt-16 text-center">
       <div className="pb-12">
-        <img
-          src={imgCircles}
-          alt="circles"
-          className="max-w-[433px] overflow-x-auto"
-        />
+        <img src={imgCircles} alt="circles" className="overflow-x-auto" />
       </div>
       <div className="flex flex-col items-center gap-6">
-        <h1 className="text-4xl font-[900]">Group Chat for Everyone</h1>
-        <p>
+        <h1 className="text-4xl font-[900] text-[#28283d]">
+          Group Chat for Everyone
+        </h1>
+        <p className="text-[#87879d]">
           Meet makes it easy to connect with others face-to-face virtually and
           collaborate across any device.
         </p>
