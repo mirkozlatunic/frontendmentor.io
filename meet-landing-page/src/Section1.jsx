@@ -25,7 +25,7 @@ const mainImgs = [
 
 function Section1() {
   return (
-    <div className="flex flex-col items-center gap-15 p-8">
+    <div className="flex flex-col items-center gap-15 p-8 pb-16">
       <div className="flex flex-col items-center">
         <div className="h-20 w-px bg-[#d1d1df]"></div>
         <p className="rounded-full border-1 border-[#d1d1df] px-5 py-4 font-[900] text-[#87879d]">
