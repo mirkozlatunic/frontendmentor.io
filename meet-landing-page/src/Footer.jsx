@@ -13,6 +13,15 @@ function Footer() {
       <div className="-mt-7 bg-[#4d96a9]">
         <img src={imgFooter} className="opacity-10" />
       </div>
+      <div className="text-center">
+        <h2 className="pb-8 text-3xl font-[900] text-[#28283d]">
+          Experience more together
+        </h2>
+        <p className="abso text-[#87879d]">
+          Stay connected with reliable HD meetings and unlimited one-on-one and
+          group video sessions.
+        </p>
+      </div>
     </footer>
   );
 }
