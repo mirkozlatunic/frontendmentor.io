@@ -10,12 +10,11 @@ function Footer() {
           02
         </p>
       </div>
-      {/* <div className="-mt-7">
-        <img
-          src={imgFooter}
-          className="absolute left-0 max-h-[374px] w-full opacity-10"
-        />
-      </div> */}
+      <img
+        src={imgFooter}
+        alt="Footer Image"
+        className="absolute mt-28 max-h-[374px] w-full opacity-15"
+      />
       <div className="-mt-7 flex flex-col items-center justify-center gap-6 bg-[#4d96a9] px-8 py-16 text-center">
         <h2 className="text-3xl font-[900] text-white">
           Experience more together
