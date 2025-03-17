@@ -32,7 +32,7 @@ function Section1() {
           01
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
         {mainImgs.map((image, index) => (
           <div key={index}>
             <img
@@ -43,11 +43,11 @@ function Section1() {
           </div>
         ))}
       </div>
-      <div className="flex flex-col text-center">
+      <div className="flex flex-col text-center md:max-w-[504px]">
         <p className="pb-4 text-xs font-[900] tracking-[0.3em] text-[#4d96a9] uppercase">
           built for modern use
         </p>
-        <h2 className="pb-8 text-3xl font-[900] text-[#28283d]">
+        <h2 className="pb-8 text-3xl font-[900] text-[#28283d] md:text-4xl">
           Smarter meeting, all in one place
         </h2>
         <p className="text-[#87879d]">
