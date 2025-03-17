@@ -15,12 +15,12 @@ function Footer() {
         alt="Footer Image"
         className="absolute mt-28 h-[374px] object-cover opacity-15 md:h-[320px]"
       />
-      <div className="-mt-7 flex h-[374px] flex-col items-center bg-[#4d96a9] px-8 py-16 text-center md:h-[320px] md:w-screen">
-        <div className="flex flex-col items-center gap-6 md:w-[504px]">
-          <h2 className="text-3xl font-[900] text-white">
+      <div className="-mt-7 flex h-[374px] flex-col items-center justify-center bg-[#4d96a9] px-8 py-16 text-center md:h-[320px] md:w-screen lg:text-left">
+        <div className="flex flex-col items-center gap-6 md:w-[504px] lg:w-[1120px] lg:flex-row lg:place-content-between lg:gap-0 lg:align-top">
+          <h2 className="w-[455px] text-3xl font-[900] text-white lg:text-4xl">
             Experience more together
           </h2>
-          <p className="text-white">
+          <p className="w-[355px] text-lg text-white">
             Stay connected with reliable HD meetings and unlimited one-on-one
             and group video sessions.
           </p>

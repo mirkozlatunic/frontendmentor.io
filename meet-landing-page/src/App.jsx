@@ -6,7 +6,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="font-red-hat container mx-auto flex min-h-screen flex-col items-center justify-center">
+    <div className="font-red-hat container mx-auto flex min-h-screen flex-col items-center justify-center pt-20">
       <Header />
       <Hero />
       <Section1 />
