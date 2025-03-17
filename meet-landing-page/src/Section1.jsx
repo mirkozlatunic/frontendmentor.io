@@ -33,14 +33,14 @@ function Section1() {
         </p>
       </div>
       <div className="grid grid-cols-2 gap-4">
-        {mainImgs.map((image) => (
-          <>
+        {mainImgs.map((image, index) => (
+          <div key={index}>
             <img
               src={image.img}
               alt={image.text}
               className="max-h-36 max-w-148 rounded-lg"
             />
-          </>
+          </div>
         ))}
       </div>
       <div className="flex flex-col text-center">
