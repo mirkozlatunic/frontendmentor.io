@@ -38,7 +38,7 @@ function Section1() {
             <img
               src={image.img}
               alt={image.text}
-              className="max-h-36 max-w-148 rounded-lg"
+              className="max-h-36 max-w-148 rounded-lg lg:max-h-65 lg:max-w-64"
             />
           </div>
         ))}
@@ -47,10 +47,10 @@ function Section1() {
         <p className="pb-4 text-xs font-[900] tracking-[0.3em] text-[#4d96a9] uppercase">
           built for modern use
         </p>
-        <h2 className="pb-8 text-3xl font-[900] text-[#28283d] md:text-4xl">
+        <h2 className="pb-8 text-3xl font-[900] text-[#28283d] md:text-4xl lg:text-[40px]">
           Smarter meeting, all in one place
         </h2>
-        <p className="text-[#87879d]">
+        <p className="text-[#87879d] lg:text-lg">
           Send messages, share files, show your screen, and record your meetings
           — all in one workspace. Control who can join with invite-only team
           access, data encryption, and data export.
