@@ -17,6 +17,7 @@ Feel free to check them out.
 | HTML--CSS     | Product preview card                                   | -                                                                                       | [Code](https://github.com/mirkozlatunic/frontendmentor.io/tree/main/preview-card)        |
 | HTML--CSS     | Huddle landing page with a single introductory section | [Netlify](https://huddle-landing-page-with-single-introductory-section-mp.netlify.app/) | [Code](https://git.io/Js24J)                                                             |
 | HTML--CSS     | Four card feature section                              | [Netlify](https://melodious-shortbread-4197b8.netlify.app/)                             | [Code](https://github.com/mirkozlatunic/frontendmentor.io/tree/main/four-card-page)      |
+| HTML--CSS     | Meet Landing Page                                      | [Netlify](https://peppy-duckanoo-d0efc8.netlify.app/)                                   | [Code](https://github.com/mirkozlatunic/frontendmentor.io/tree/main/meet-landing-page)   |
 
 ### Junior
 
