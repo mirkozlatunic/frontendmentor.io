@@ -38,7 +38,7 @@ function Section1() {
             <img
               src={image.img}
               alt={image.text}
-              className="max-h-36 max-w-148 rounded-lg lg:max-h-65 lg:max-w-64"
+              className="max-h-36 max-w-148 rounded-lg xl:max-h-65 xl:max-w-64"
             />
           </div>
         ))}
