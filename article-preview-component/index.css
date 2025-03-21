@@ -1,0 +1,12 @@
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: #ecf2f8;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  max-width: 355px;
+  max-height: 280px;
+}
