@@ -16,38 +16,38 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
     <script defer src="./index.js"></script>
     <title>Frontend Mentor | Article preview component</title>
   </head>
   <body>
-    <div class="card mb-3 mx-auto" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img
-            src="./images/drawers.jpg"
-            class="img-fluid rounded-start"
-            alt="drawer"
-          />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </p>
+    <div class="card">
+      <img src="./images/drawers.jpg" alt="drawer" class="drawer" />
+      <div class="text-area">
+        <h1>
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+        <footer class="footer">
+          <div class="avatar-area">
+            <img
+              src="./images/avatar-michelle.jpg"
+              alt="avatar"
+              class="avatar"
+            />
+            <div class="avatar-data">
+              <p class="name">Michelle Appleton</p>
+              <p class="date">28 Jun 2020</p>
+            </div>
           </div>
-        </div>
+          <button class="share-button">
+            <img src="./images/icon-share.svg" alt="share-button" />
+          </button>
+        </footer>
       </div>
     </div>
   </body>
