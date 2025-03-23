@@ -68,6 +68,10 @@ p {
   border: none;
   border-radius: 50%;
   padding: 9px;
+  cursor: pointer;
+}
+
+.pointer {
 }
 
 @media only screen and (max-width: 768px) {

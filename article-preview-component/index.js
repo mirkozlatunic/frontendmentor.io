@@ -1,1 +1,3 @@
-console.log('Hello World');
+function colorChange() {
+  console.log('button clicked');
+}
