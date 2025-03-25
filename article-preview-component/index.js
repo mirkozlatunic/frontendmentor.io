@@ -1,5 +1,8 @@
-let button = document.querySelector('.share-button');
+const button = document.querySelector('.share-button');
+const pointer = document.querySelector('.pointer');
 
 function colorChange() {
-  console.log('button clicked');
+  // Toggle active class on button
+  button.classList.toggle('active');
+  pointer.classList.toggle('active');
 }

@@ -71,7 +71,12 @@ p {
   cursor: pointer;
 }
 
-.pointer {
+.share-button.active {
+  background-color: #6e8098;
+}
+
+.pointer.active {
+  filter: brightness(0) invert(1);
 }
 
 @media only screen and (max-width: 768px) {
