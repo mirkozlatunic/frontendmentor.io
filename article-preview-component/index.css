@@ -16,6 +16,7 @@ h1 {
 p {
   font-size: 13px;
   color: #6e8098;
+  margin: 24px 0;
 }
 
 .card {
@@ -28,7 +29,12 @@ p {
 }
 
 .text-area {
-  padding: 40px;
+  padding: 30px 40px;
+}
+
+.mid-text {
+  margin: 0;
+  padding: 24px 0;
 }
 
 .drawer {
@@ -67,9 +73,13 @@ p {
 .share-button {
   border: none;
   border-radius: 50%;
-  padding: 9px;
+  width: 32px;
+  height: 32px;
   cursor: pointer;
+  margin: 4px 3px 4px 0;
+  padding: 0;
   transition: background-color 0.3s ease;
+  z-index: 10;
 }
 
 .share-button .pointer {
@@ -90,13 +100,14 @@ p {
   align-items: center;
   background-color: #48556a;
   border-radius: 10px;
-  padding: 18px 39px 29px 39px;
-  left: 74.5%;
-  top: 43%;
+  padding: 18px 18px;
+  left: 77%;
+  top: 47%;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-20px);
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  filter: drop-shadow(0px 10px 10px #c9d5e1);
 }
 
 .modal.show-modal {
@@ -141,13 +152,26 @@ p {
     max-width: 608px;
     max-height: 346px;
   }
+
+  .text-area {
+    padding: 41px 36px 41px 32px;
+  }
+
+  .modal {
+    left: 73%;
+    top: 55%;
+  }
 }
 
 @media only screen and (max-width: 590px) {
+  .mid-text {
+    padding-bottom: 48px;
+  }
+
   .card {
     display: block;
     max-width: 327px;
-    min-height: 538px;
+    min-height: 544px;
   }
 
   .drawer {
@@ -161,7 +185,20 @@ p {
     padding: 32px 30px 18px 32px;
   }
 
-  .footer {
-    padding-top: 35px;
+  .modal {
+    width: 81.5%;
+    left: 0;
+    top: 87%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding: 22px 30px;
+  }
+
+  .modal::after {
+    display: none;
+  }
+
+  .share {
+    line-height: 32px;
   }
 }
