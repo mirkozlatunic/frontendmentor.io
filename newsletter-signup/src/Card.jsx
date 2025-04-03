@@ -1,8 +1,10 @@
 import React from "react";
+import img from "./assets/images/illustration-sign-up-mobile.svg";
 
 function Card() {
   return (
-    <div className="rounded-5xl max-h- max-h-[605px] max-w-[905px] bg-white p-8">
+    <div className="">
+      <img src={img} alt="image" />
       <div></div>
     </div>
   );
