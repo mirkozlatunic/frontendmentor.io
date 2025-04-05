@@ -2,7 +2,7 @@ import React from "react";
 
 function Form() {
   return (
-    <div className="flex flex-col justify-center gap-6 px-6">
+    <div className="flex flex-col justify-center gap-6 px-6 md:px-0">
       <form action="" className="flex flex-col gap-2">
         <label htmlFor="" className="font-bold">
           Email address
@@ -14,7 +14,7 @@ function Form() {
           required
         />
       </form>
-      <button className="rounded-lg bg-[#242742] px-10 py-4 font-bold text-white">
+      <button className="cursor-pointer rounded-lg bg-[#242742] px-10 py-4 font-bold text-white">
         Subscribe to monthly newsletter
       </button>
     </div>

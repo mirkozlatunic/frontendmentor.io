@@ -11,9 +11,13 @@ const bullets = [
 
 function Card() {
   return (
-    <div className="pb-10">
-      <img src={img} alt="image" className="w-full object-cover" />
-      <div className="px-6 py-12">
+    <div className="rounded-4xl md:bg-white md:p-10">
+      <img
+        src={img}
+        alt="image"
+        className="w-full object-cover md:rounded-2xl"
+      />
+      <div className="px-6 py-12 md:px-0">
         <h1 className="pb-6 text-5xl font-bold">Stay update!</h1>
         <p className="pb-6">
           Join 60,000+ product managers receiving monthly updates on:
