@@ -12,15 +12,15 @@ const bullets = [
 function Card() {
   return (
     <div className="pb-10">
-      <img src={img} alt="image" />
+      <img src={img} alt="image" className="w-full object-cover" />
       <div className="px-6 py-12">
         <h1 className="pb-6 text-5xl font-bold">Stay update!</h1>
         <p className="pb-6">
           Join 60,000+ product managers receiving monthly updates on:
         </p>
         <ul>
-          {bullets.map((bullet) => (
-            <div className="flex gap-4 pb-2">
+          {bullets.map((bullet, index) => (
+            <div className="flex gap-4 pb-2" key={index}>
               <img src={checkmark} alt="checkmark" />
               <li>{bullet}</li>
             </div>
