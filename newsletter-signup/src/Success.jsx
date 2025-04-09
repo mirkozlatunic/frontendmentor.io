@@ -8,6 +8,7 @@ function Success({ userEmail }) {
     setIsButtonClicked(true);
     // Button will stay in clicked state until form processes
   };
+
   const handleDismiss = () => {
     // Reload the page or navigate back
     window.location.reload();
@@ -35,8 +36,8 @@ function Success({ userEmail }) {
             className={`mt-4 w-full cursor-pointer rounded-lg ${
               isButtonClicked
                 ? "bg-gradient-to-r from-[#FF6A3A] to-[#FF527B]"
-                : "bg-[#242742]"
-            } mt-4 px-10 py-4 font-bold text-white`}
+                : "bg-[#242742] hover:bg-gradient-to-r hover:from-[#FF6A3A] hover:to-[#FF527B]"
+            } mt-4 px-10 py-4 font-bold text-white transition duration-300`}
           >
             Dismiss message
           </button>
