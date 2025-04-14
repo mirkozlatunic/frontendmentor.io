@@ -13,3 +13,47 @@ main {
   display: grid;
   grid-template-columns: auto;
 }
+
+img {
+  width: 78px;
+  height: 78px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 200;
+  margin: 0;
+}
+
+.avatar {
+  max-width: 255px;
+}
+
+.avatar-card {
+  background-color: #5747ea;
+  padding: 32px 85px 92px 32px;
+  border-radius: 15px;
+}
+
+.avatar-report {
+  font-size: 15px;
+  color: #bbc0ff;
+  margin: 0;
+  padding-top: 40px;
+}
+
+.time-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c204b;
+  padding: 32px;
+  border-radius: 15px;
+}
+
+.time-card-button {
+  color: #bbc0ff;
+  border: none;
+  background-color: none;
+}
