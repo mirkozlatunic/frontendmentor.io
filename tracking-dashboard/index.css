@@ -11,10 +11,11 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
 }
 
-img {
+.img-avatar {
   width: 78px;
   height: 78px;
   border: 2px solid white;
@@ -28,10 +29,13 @@ h1 {
 }
 
 .avatar {
+  position: relative;
   max-width: 255px;
+  max-height: 520px;
 }
 
 .avatar-card {
+  position: absolute;
   background-color: #5747ea;
   padding: 32px 85px 92px 32px;
   border-radius: 15px;
@@ -44,16 +48,89 @@ h1 {
   padding-top: 40px;
 }
 
-.time-card {
+.date-card {
   display: flex;
   flex-direction: column;
+  justify-content: end;
   background-color: #1c204b;
   padding: 32px;
   border-radius: 15px;
+  align-items: start;
+  height: 456px;
+  width: 191px;
 }
 
-.time-card-button {
+.date-card-button {
   color: #bbc0ff;
+  background-color: Transparent;
+  background-repeat: no-repeat;
   border: none;
-  background-color: none;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0 0 21px 0;
+}
+
+.date-card-button:last-child {
+  padding-bottom: 0;
+}
+
+.date-card-button:hover {
+  color: white;
+}
+
+.date-card-button:focus {
+  color: white;
+}
+
+.card {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  position: relative;
+}
+
+.img-card {
+  position: absolute;
+  width: 255px;
+  height: 244px;
+  background-color: #ff8b64;
+  border-radius: 15px;
+  z-index: -1;
+}
+
+.img-bg {
+  width: 78px;
+  height: 78px;
+  margin-right: 18px;
+}
+
+.time-card {
+  background-color: #1c204b;
+  border-radius: 15px;
+  width: 192px;
+  height: 130px;
+  padding: 32px;
+}
+
+.time-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+}
+
+.time-card-section {
+  margin: 0;
+}
+
+.time-card-hours {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 200;
+  padding-bottom: 8px;
+}
+
+.time-card-week {
+  margin: 0;
+  color: #bbc0ff;
 }
