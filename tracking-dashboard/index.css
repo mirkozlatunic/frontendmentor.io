@@ -73,6 +73,10 @@ h1 {
   padding: 0 0 21px 0;
 }
 
+.date-card-button.active {
+  color: white;
+}
+
 .date-card-button:last-child {
   padding-bottom: 0;
 }
