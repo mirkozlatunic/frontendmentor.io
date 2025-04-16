@@ -5,6 +5,7 @@ body {
   margin: 0 auto;
   background-color: #0e1323;
   font-family: 'Rubik', sans-serif;
+  font-weight: 200;
   color: white;
   height: 100vh;
 }
@@ -24,7 +25,6 @@ main {
 
 h1 {
   font-size: 40px;
-  font-weight: 200;
   margin: 0;
 }
 
@@ -84,18 +84,17 @@ h1 {
 
 .card {
   display: flex;
-  justify-content: end;
   flex-direction: column;
   position: relative;
 }
 
 .img-card {
-  position: absolute;
+  display: flex;
+  justify-content: end;
   width: 255px;
-  height: 244px;
+  height: 160px;
   background-color: #ff8b64;
   border-radius: 15px;
-  z-index: -1;
 }
 
 .img-bg {
@@ -105,6 +104,8 @@ h1 {
 }
 
 .time-card {
+  position: absolute;
+  top: 45px;
   background-color: #1c204b;
   border-radius: 15px;
   width: 192px;
@@ -126,7 +127,6 @@ h1 {
 .time-card-hours {
   margin: 0;
   font-size: 50px;
-  font-weight: 200;
   padding-bottom: 8px;
 }
 
