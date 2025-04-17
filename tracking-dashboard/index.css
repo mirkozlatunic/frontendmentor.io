@@ -31,10 +31,13 @@ h1 {
   margin: 0;
 }
 
+button {
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+}
+
 .avatar {
   position: relative;
-  max-width: 255px;
-  max-height: 520px;
 }
 
 .avatar-card {
@@ -105,7 +108,6 @@ h1 {
   display: flex;
   justify-content: end;
   width: 255px;
-  height: 160px;
   background-color: #ff8b64;
   border-radius: 15px;
 }
@@ -150,4 +152,68 @@ h1 {
 .time-card-week {
   margin: 0;
   color: #bbc0ff;
+}
+
+@media screen and (max-width: 1150px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    max-width: 612px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  button {
+    width: 108px;
+    gap: 8px;
+  }
+
+  .avatar-card {
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    width: 89.5%;
+    gap: 24px;
+  }
+
+  .avatar-report {
+    padding: 0;
+  }
+
+  .date-card {
+    width: auto;
+    height: 203px;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    align-content: flex-end;
+    padding: 25px;
+    height: 164px;
+  }
+
+  .date-card-button {
+    padding: 0;
+  }
+
+  .cards-container {
+    gap: 24px;
+  }
+
+  .card {
+    width: 188px;
+    height: 213px;
+  }
+
+  .img-card {
+    width: auto;
+    height: auto;
+  }
+
+  .time-card {
+    max-width: 140px;
+    height: auto;
+    padding: 24px;
+  }
 }
