@@ -22,8 +22,9 @@ Feel free to check them out.
 
 ### Junior
 
-| Technology    | Challenges                                   | Live                                                      | Repo                                                                                   |
-| ------------- | -------------------------------------------- | --------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| HTML--CSS--JS | Social media dashboard with theme switcher   | [Live](https://loopstudios-landing-page-mp.netlify.app/)  | [Code](https://github.com/mirkozlatunic/frontendmentor.io/tree/main/social-dash-app)   |
-| HTML--CSS     | Testimonials grid section                    | [Netlify](https://delightful-meerkat-fe8ceb.netlify.app/) | [Code](https://github.com/mirkozlatunic/frontendmentor.io/tree/main/testimonial-grid)  |
-| HTML--CSS--JS | Newsletter sign-up form with success message | [Netlify](https://marvelous-piroshki-53329f.netlify.app/) | [Code](https://github.com/mirkozlatunic/frontendmentor.io/tree/main/newsletter-signup) |
+| Technology    | Challenges                                   | Live                                                      | Repo                                                                                    |
+| ------------- | -------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| HTML--CSS--JS | Social media dashboard with theme switcher   | [Live](https://loopstudios-landing-page-mp.netlify.app/)  | [Code](https://github.com/mirkozlatunic/frontendmentor.io/tree/main/social-dash-app)    |
+| HTML--CSS     | Testimonials grid section                    | [Netlify](https://delightful-meerkat-fe8ceb.netlify.app/) | [Code](https://github.com/mirkozlatunic/frontendmentor.io/tree/main/testimonial-grid)   |
+| HTML--CSS--JS | Newsletter sign-up form with success message | [Netlify](https://marvelous-piroshki-53329f.netlify.app/) | [Code](https://github.com/mirkozlatunic/frontendmentor.io/tree/main/newsletter-signup)  |
+| HTML--CSS--JS | Time tracking dashboard                      | [Netlify](https://stellular-crepe-900555.netlify.app/)    | [Code](https://github.com/mirkozlatunic/frontendmentor.io/tree/main/tracking-dashboard) |
