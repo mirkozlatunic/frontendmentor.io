@@ -184,7 +184,6 @@ button {
 
   .date-card {
     width: auto;
-    height: 203px;
     flex-direction: row;
     align-items: end;
     justify-content: center;
@@ -212,8 +211,30 @@ button {
   }
 
   .time-card {
-    max-width: 140px;
+    width: 140px;
     height: auto;
     padding: 24px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  body {
+    padding: 24px 81px;
+    height: 100%;
+  }
+  main {
+    max-width: 327px;
+  }
+
+  .card {
+    width: 327px;
+  }
+
+  .avatar-card {
+    width: 80%;
+  }
+
+  .time-card {
+    width: 279px;
   }
 }
