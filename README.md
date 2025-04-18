@@ -28,3 +28,4 @@ Feel free to check them out.
 | HTML--CSS     | Testimonials grid section                    | [Netlify](https://delightful-meerkat-fe8ceb.netlify.app/) | [Code](https://github.com/mirkozlatunic/frontendmentor.io/tree/main/testimonial-grid)   |
 | HTML--CSS--JS | Newsletter sign-up form with success message | [Netlify](https://marvelous-piroshki-53329f.netlify.app/) | [Code](https://github.com/mirkozlatunic/frontendmentor.io/tree/main/newsletter-signup)  |
 | HTML--CSS--JS | Time tracking dashboard                      | [Netlify](https://stellular-crepe-900555.netlify.app/)    | [Code](https://github.com/mirkozlatunic/frontendmentor.io/tree/main/tracking-dashboard) |
+| HTML--CSS--JS | Tip Calculator                               | [Netlify](https://resilient-faun-14b7f1.netlify.app/)     | [Code](https://github.com/mirkozlatunic/frontendmentor.io/tree/main/tip-calculator)     |
