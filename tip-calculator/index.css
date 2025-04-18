@@ -1,5 +1,348 @@
-body {
-  font-family: 'Space Mono', sans-serif;
-  font-weight: 900;
+:root {
+  --var-black: #000000;
+  --var-gray50: #f3f9fa;
+  --var-gray200: #c5e4e7;
+  --var-gray300: #9ebbbd;
+  --var-gray400: #7f9d9f;
+  --var-gray500: #5e7a7d;
+  --var-gray550: #547878;
+  --var-gray600: #3d6666;
+  --var-green200: #9fe8df;
+  --var-green400: #26c2ae;
+  --var-green750: #0d686d;
+  --var-green800: #085c61;
+  --var-green900: #00474b;
+  --var-orange400: #e17052;
+}
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: var(--var-gray200);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  justify-content: center;
+}
+
+@media (max-width: 375px) {
+  body {
+    padding: 0;
+  }
+
+  main {
+    padding: 0;
+    margin: 0;
+  }
+
+  .title-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .calculator-container {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .result-section {
+    padding: 1.5rem;
+  }
+
+  .tip-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tip-btn {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  #custom-tip {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .amount {
+    font-size: 1.5rem;
+  }
+
+  input {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+  }
+
+  label,
+  .tip-section p {
+    font-size: 0.9rem;
+  }
+
+  .input-section {
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 1024px) {
+  body {
+    background-color: var(--var-gray200);
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .calculator-container {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .result-section {
+    padding: 2.5rem;
+    border-radius: 15px;
+  }
+
+  .tip-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .amount {
+    font-size: 2.5rem;
+  }
+
+  .reset-btn {
+    margin-top: 2rem;
+  }
+
+  input {
+    font-size: 1.5rem;
+    padding: 0.75rem;
+  }
+
+  .input-section {
+    gap: 2rem;
+  }
+}
+
+main {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-container {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  width: 124px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  color: var(--var-gray600);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  white-space: normal;
+  text-align: center;
+  width: 100%;
+}
+
+.calculator-container {
+  background-color: var(--var-white);
+  padding: 2rem;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 1024px) {
+  .calculator-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 2.5rem;
+  }
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+label,
+.tip-section p {
+  color: var(--var-gray500);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.label-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.label-container label {
+  margin-bottom: 0;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--var-gray50);
+  border: 2px solid transparent;
+  border-radius: 5px;
+  text-align: right;
+  font-family: inherit;
+  font-size: 1.5rem;
+  color: var(--var-gray600);
+  outline: none;
+  font-weight: 700;
+}
+
+input:focus {
+  border-color: var(--var-green400);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.tip-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .tip-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.tip-btn {
+  background-color: var(--var-green900);
+  color: var(--var-white);
+  border: none;
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.2s;
+  font-weight: 700;
+}
+
+.tip-btn:hover {
+  background-color: var(--var-green200);
+  color: var(--var-green900);
+}
+
+.tip-btn.active {
+  background-color: var(--var-green400);
+  color: var(--var-green900);
+}
+
+#custom-tip {
+  font-size: 1.25rem;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.error-msg {
+  color: var(--var-orange400);
+  display: none;
+  font-size: 0.9rem;
+}
+
+.error input {
+  border-color: var(--var-orange400);
+}
+
+.error .error-msg {
+  display: block;
+}
+
+.result-section {
+  background-color: var(--var-green900);
+  padding: 1.5rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.amounts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tip-amount,
+.total-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label p {
+  color: var(--var-white);
+  margin-bottom: 0.25rem;
+}
+
+.label span {
+  color: var(--var-gray300);
+  font-size: 0.875rem;
+}
+
+.amount {
+  color: var(--var-green400);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.reset-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--var-green400);
+  color: var(--var-green900);
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: background-color 0.2s;
+}
+
+.reset-btn:hover {
+  background-color: var(--var-green200);
+}
+
+.reset-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
 }
