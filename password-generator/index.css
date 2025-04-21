@@ -1,0 +1,226 @@
+/* Import Google Font - JetBrains Mono */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: #18171f;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e6e5ea;
+  padding: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 540px;
+}
+
+.title {
+  color: #817d92;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Password Display Styles */
+.password-display {
+  background-color: #24232c;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.password {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.password:empty::before {
+  content: attr(placeholder);
+  color: #817d92;
+  opacity: 0.75;
+}
+
+.copy-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.copy-btn:hover svg path {
+  fill: #e6e5ea;
+}
+
+/* Generator Box Styles */
+.generator-box {
+  background-color: #24232c;
+  padding: 2rem;
+}
+
+/* Length Control Styles */
+.length-control {
+  margin-bottom: 2rem;
+}
+
+.length-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.length-value {
+  color: #a4ffaf;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Slider Styles */
+.slider {
+  width: 100%;
+  height: 8px;
+  background: #18171f;
+  border-radius: 4px;
+  appearance: none;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  background: #e6e5ea;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  background: #18171f;
+  border: 2px solid #a4ffaf;
+}
+
+/* Checkbox Styles */
+.checkboxes {
+  margin-bottom: 2rem;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.checkbox-container input {
+  display: none;
+}
+
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e6e5ea;
+  margin-right: 1.5rem;
+  position: relative;
+}
+
+.checkbox-container input:checked + .checkbox-custom {
+  background-color: #a4ffaf;
+  border-color: #a4ffaf;
+}
+
+.checkbox-container input:checked + .checkbox-custom::after {
+  content: '✓';
+  position: absolute;
+  color: #18171f;
+  font-size: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Strength Meter Styles */
+.strength-meter {
+  background-color: #18171f;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.strength-title {
+  color: #817d92;
+  font-size: 1.125rem;
+}
+
+.strength-indicator {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.strength-bars {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.bar {
+  width: 10px;
+  height: 28px;
+  border: 2px solid #e6e5ea;
+}
+
+/* Generate Button Styles */
+.generate-btn {
+  width: 100%;
+  background-color: #a4ffaf;
+  color: #24232c;
+  border: none;
+  padding: 1.25rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.125rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+.generate-btn:hover {
+  background-color: transparent;
+  border: 2px solid #a4ffaf;
+  color: #a4ffaf;
+}
+
+.generate-btn:hover svg path {
+  fill: #a4ffaf;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 375px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .password {
+    font-size: 1.25rem;
+  }
+
+  .generator-box {
+    padding: 1rem;
+  }
+}
