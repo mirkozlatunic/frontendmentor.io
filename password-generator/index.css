@@ -67,6 +67,12 @@ body {
   padding: 0.5rem;
 }
 
+.copy-btn:active,
+.generate-btn:active {
+  transform: scale(0.95); /* Slightly shrink the button on click */
+  opacity: 0.8; /* Reduce opacity for a pressed effect */
+}
+
 .copy-btn:hover svg path {
   fill: #e6e5ea;
 }
