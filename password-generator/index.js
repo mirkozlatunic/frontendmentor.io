@@ -1,13 +1,27 @@
-// Password generator functionality will be implemented later
-let copyButton = document.querySelector('.copy-btn');
-let copyText = document.querySelector('.copy-text');
-let passwordText = document.querySelector('.password');
-let slider = document.querySelector('.slider');
-let charLength = document.querySelector('.length-value');
+const charset =
+  'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+~`|}{[]:;?><,./-=';
+const copyButton = document.querySelector('.copy-btn');
+const copyText = document.querySelector('.copy-text');
+const passwordText = document.querySelector('.password');
+const slider = document.querySelector('.slider');
+const charLength = document.querySelector('.length-value');
+const generateButton = document.querySelector('.generate-btn');
 
 function copyPassword() {
   copyText.textContent = 'COPIED';
   navigator.clipboard.writeText(passwordText.textContent);
+}
+
+function generatePassword() {
+  const length = parseInt(slider.value);
+  let generatedPassword = '';
+
+  for (let i = 0; i < length; i++) {
+    const randomNumber = Math.floor(Math.random() * charset.length);
+    generatedPassword += charset[randomNumber];
+  }
+
+  passwordText.textContent = generatedPassword;
 }
 
 slider.oninput = function () {
@@ -19,3 +33,4 @@ slider.oninput = function () {
 };
 
 copyButton.addEventListener('click', copyPassword);
+generateButton.addEventListener('click', generatePassword);
