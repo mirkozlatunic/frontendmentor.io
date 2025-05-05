@@ -52,6 +52,14 @@ body {
   opacity: 0.75;
 }
 
+.copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #a4ffaf;
+}
+
 .copy-btn {
   background: none;
   border: none;
